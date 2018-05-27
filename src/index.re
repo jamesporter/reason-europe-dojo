@@ -1,4 +1,8 @@
 ReactDOMRe.renderToElementWithId(
-  <ComposableMap> <ZoomableGroup /> </ComposableMap>,
+  <ComposableMap>
+    <ZoomableGroup>
+      <Geographies> ...(() => ReasonReact.array([||])) </Geographies>
+    </ZoomableGroup>
+  </ComposableMap>,
   "main",
 );
