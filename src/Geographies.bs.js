@@ -4,10 +4,9 @@
 var ReasonReact = require("reason-react/src/ReasonReact.js");
 var ReactSimpleMaps = require("react-simple-maps");
 
-function make(height, width, children) {
-  return ReasonReact.wrapJsForReason(ReactSimpleMaps.ComposableMap, {
-              height: height,
-              width: width
+function make(geography, children) {
+  return ReasonReact.wrapJsForReason(ReactSimpleMaps.Geographies, {
+              geography: geography
             }, children);
 }
 

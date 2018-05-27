@@ -1,12 +1,15 @@
 [@bs.deriving abstract]
-type composableMapProps = {className: string};
+type composableMapProps = {
+  height: int,
+  width: int
+};
 
 [@bs.module "react-simple-maps"]
 external composableMap : ReasonReact.reactClass = "ComposableMap";
 
-let make = children =>
+let make = (~height, ~width, children) =>
   ReasonReact.wrapJsForReason(
     ~reactClass=composableMap,
-    ~props=Js.Obj.empty(),
+    ~props=composableMapProps(~height, ~width),
     children,
   );

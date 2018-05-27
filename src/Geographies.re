@@ -1,13 +1,11 @@
 [@bs.deriving abstract]
-type geographiesProps = {className: string};
+type geographiesProps = {geography: string};
 
-[@bs.module "react-simple-maps"]
-external geographies : ReasonReact.reactClass = "Geographies";
+[@bs.module "react-simple-maps"] external geographies : ReasonReact.reactClass = "Geographies";
 
-let make = children =>
+let make = (~geography, children) =>
   ReasonReact.wrapJsForReason(
     ~reactClass=geographies,
-    ~props=Js.Obj.empty(),
-    children,
+    ~props=geographiesProps(~geography),
+    children
   );
-  
