@@ -1,6 +1,6 @@
 ReactDOMRe.renderToElementWithId(
-  <ComposableMap height=10 width=10>
-    <ZoomableGroup>
+  <ComposableMap height=980 width=800>
+    <ZoomableGroup center=[0, 0] disablePanning=true>
       <Geographies geography="./world-50m.json">
         ...(
              (geographies, projection) =>

@@ -4,8 +4,11 @@
 var ReasonReact = require("reason-react/src/ReasonReact.js");
 var ReactSimpleMaps = require("react-simple-maps");
 
-function make(children) {
-  return ReasonReact.wrapJsForReason(ReactSimpleMaps.ZoomableGroup, { }, children);
+function make(center, disablePanning, children) {
+  return ReasonReact.wrapJsForReason(ReactSimpleMaps.ZoomableGroup, {
+              center: center,
+              disablePanning: disablePanning
+            }, children);
 }
 
 exports.make = make;
