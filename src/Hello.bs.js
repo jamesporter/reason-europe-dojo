@@ -18,14 +18,14 @@ function make(name, _) {
           /* willUpdate */component[/* willUpdate */7],
           /* shouldUpdate */component[/* shouldUpdate */8],
           /* render */(function () {
-              return React.createElement("p", undefined, "Hello " + (name + "!"));
-            }),
+      return React.createElement("p", undefined, "Hello " + (name + "!"));
+    }),
           /* initialState */component[/* initialState */10],
           /* retainedProps */component[/* retainedProps */11],
           /* reducer */component[/* reducer */12],
           /* subscriptions */component[/* subscriptions */13],
           /* jsElementWrapped */component[/* jsElementWrapped */14]
-        ];
+  ];
 }
 
 exports.component = component;

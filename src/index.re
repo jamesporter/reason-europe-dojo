@@ -1,1 +1,4 @@
-ReactDOMRe.renderToElementWithId(<Hello name="James" />, "main");
+ReactDOMRe.renderToElementWithId(
+  <ComposableMap> <ZoomableGroup /> </ComposableMap>,
+  "main",
+);
