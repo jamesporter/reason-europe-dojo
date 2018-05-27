@@ -4,8 +4,11 @@
 var ReasonReact = require("reason-react/src/ReasonReact.js");
 var ReactSimpleMaps = require("react-simple-maps");
 
-function make(children) {
-  return ReasonReact.wrapJsForReason(ReactSimpleMaps.Geography, { }, children);
+function make(geography, projection, children) {
+  return ReasonReact.wrapJsForReason(ReactSimpleMaps.Geography, {
+              geography: geography,
+              projection: projection
+            }, children);
 }
 
 exports.make = make;
