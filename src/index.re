@@ -1,0 +1,1 @@
+ReactDOMRe.renderToElementWithId(<Hello name="James" />, "main");
