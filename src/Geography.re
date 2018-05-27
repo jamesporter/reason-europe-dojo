@@ -10,4 +10,3 @@ let make = children =>
     ~props=Js.Obj.empty(),
     children,
   );
-  
